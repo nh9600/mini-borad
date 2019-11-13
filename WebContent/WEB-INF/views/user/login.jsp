@@ -1,5 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+	<%
+	String msg = (String)request.getAttribute("msg");//msg를 가져옴
+	if(msg!=null){
+	%>
+	<script>
+	alert('<%=msg%>');<%--msg안에 있는 메세지를 호출--%>
+	</script>
+	<%
+	}
+	%>
 <!DOCTYPE html>
 <html>
 <head>

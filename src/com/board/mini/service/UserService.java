@@ -17,7 +17,7 @@ public class UserService {
 	public Map<String,Object> doLogin(String id,String pwd){
 		Connection con = DBCon.getCon();//1.제일 먼저
 		DBExecutor dbe= new DBExecutor();
-		String sql="select * fro, user_info where id=? and pwd=?";
+		String sql="select * from user_info where ui_id=? and ui_pwd=?";
 		try {
 			PreparedStatement ps = dbe.prepared(con, sql);//Map=키는 스트링 밸류는 오브젝트(아무거나 다 넣을 수 있는 것)
 			ps.setString(1, id);

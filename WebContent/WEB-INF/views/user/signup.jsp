@@ -11,20 +11,16 @@
 	<form method="post" action="/user/signup" onsubmit="return checkForm()"><%--이벤트만 모두 소문자!!,받고 false리턴을 해줘야 실행을 함 --%>
 		<table border="1">
 			<tr>
-				<th>이름</th>
-				<td><input type="text" name="uiName" id="uiName"></td>
+				<th>제목</th>
+				<td><input type="text" name="uiTitle" id="uiTitle"></td>
 			</tr>
 			<tr>
-				<th>아이디</th>
-				<td><input type="text" name="uiId" id="uiId"></td>
+				<th>내용</th>
+				<td><textarea name="uiId" id="uiId"></textarea></td>
 			</tr>
 			<tr>
-				<th>비밀번호</th>
+				<th>작성자</th>
 				<td><input type="password" name="uiPwd" id="uiPwd"></td>
-			</tr>
-			<tr>
-				<th>비밀번호 확인</th>
-				<td><input type="password" name="uiPwdCheck" id="uiPwdCheck"></td>
 			</tr>
 			<tr>
 			<th colspan="2"><button>회원가입</button></th><%--type="button" onclick="checkForm()저번 방식 폼이, 서밋을 해줌--%>
